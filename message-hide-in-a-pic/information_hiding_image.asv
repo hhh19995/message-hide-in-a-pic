@@ -1,0 +1,16 @@
+clc;
+clear;
+image=imread('timg.jfif');
+R=image(:,:,1);
+G=image(:,:,2);
+B=image(:,:,3);
+hide=imread('new.tif');
+a=double(hide);
+for i=1:850
+    for j=1:1280
+        if a(i,j)==255
+            R(i,j)=R(i,j)-mod(R())+1;
+        else
+        end
+    end
+end
